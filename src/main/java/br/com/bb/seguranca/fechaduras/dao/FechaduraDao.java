@@ -1,6 +1,9 @@
 package br.com.bb.seguranca.fechaduras.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 import br.com.bb.seguranca.fechaduras.modelo.Fechadura;
 
@@ -23,6 +26,13 @@ public class FechaduraDao {
 	public void remover(Fechadura fechadura) {
 		fechadura = em.merge(fechadura);
 		this.em.remove(fechadura);
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<Fechadura> findNativeAll() {
+		Query query = em.createNativeQuery("SELECT * FROM fechadura", Fechadura.class);
+		return query.getResultList();
+
 	}
 
 }
