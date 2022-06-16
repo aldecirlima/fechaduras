@@ -6,11 +6,11 @@
 
 	<groupId>br.com.bb.seguranca</groupId>
 	<artifactId>fechaduras</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>fechaduras</name>
-	<url>http://www.example.com</url>
+	<url>https://seguranca.bb.com.br</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

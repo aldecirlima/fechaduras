@@ -13,9 +13,15 @@ public class JPAUtil {
 	 * persistence.xml
 	 */
 	private static final EntityManagerFactory FACTORY_MYSQL = Persistence.createEntityManagerFactory("mysql");
+//	private static final EntityManagerFactory FACTORY_ORACLE_PSIM = Persistence
+//			.createEntityManagerFactory("oracle-psim");
 
 	public static EntityManager getEntityManagerMysql() {
 		return FACTORY_MYSQL.createEntityManager();
 	}
+
+//	public static EntityManager getEntityManagerOraclePSIM() {
+//		return FACTORY_ORACLE_PSIM.createEntityManager();
+//	}
 
 }
