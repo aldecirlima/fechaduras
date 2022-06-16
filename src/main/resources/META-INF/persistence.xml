@@ -31,7 +31,7 @@
 			<property name="javax.persistence.jdbc.password" value="" />
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.OracleDialect" />
-			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+			<property name="hibernate.hbm2ddl.auto" value="none" />
 		</properties>
 	</persistence-unit>
 
